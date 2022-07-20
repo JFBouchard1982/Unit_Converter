@@ -1,0 +1,56 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="top-container">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input id="input-el">
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div class="box">
+            <span>
+                <form>
+                    <h2 id="h2-theme">Light / Dark Theme
+                    <input onclick="toggle(this.form)" id="checkbox" name="checkbox" type="checkbox" /><label for="checkbox">Toggle</label>  
+                    </h2>        
+                </form>
+            </span>    
+
+        </div>   
+        <div class="box-container">
+            <div class="box">
+                <h2>Length (Meters/Feet)</h2>
+                    <div class="on-oneline">
+                        <p id="m2f"></p>
+                        <p class="splitter">|</p>
+                        <p id="f2m"></p>
+                    </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <h2>Volume (Liters/Gallons)</h2>
+                    <div class="on-oneline">
+                        <p id="l2g"></p>
+                        <p class="splitter">|</p>
+                        <p id="g2l"></p> 
+                    </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <h2>Mass(Kilograms/Pounds)</h2>
+                    <div class="on-oneline">
+                        <p id="k2p"></p>
+                        <p class="splitter">|</p>
+                        <p id="p2k"></p>
+                    </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
